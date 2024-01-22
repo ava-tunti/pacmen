@@ -5,5 +5,5 @@ This program will allow you to add as many PacMen as you desire onto the screen.
 <img src="PacMan1.png">
 
 # Instructions to run the program
-Simply go to the link: [https://ava-tunti.github.io/pacmen/starter.html](Pacmen Factory - Ava Tunti) and click the button "Add Pacmen" to add your desired amount of pacmen. Then, click the "Start Game" button to watch them move around!
+Simply go to the link: [Pacmen Factory - Ava Tunti](https://ava-tunti.github.io/pacmen/starter.html)and click the button "Add Pacmen" to add your desired amount of pacmen. Then, click the "Start Game" button to watch them move around!
 
