@@ -1,101 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PacMan Game</title>
-  <style>
-    body {
-      background-color: lightblue;
-      margin: 0;
-      overflow: hidden;
-    }
-
-    button {
-      margin: 10px;
-      padding: 10px;
-      background-color: lightblue;
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      position: fixed;
-    }
-
-    #game {
-      position: relative;
-      overflow: hidden;
-      background-color: #ffffff;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      height: calc(100vh - 60px); /* Adjusted height to fit the screen below buttons */
-    }
-  </style>
-</head>
-<body>
-  <div id='game'>
-    <button onclick='makeOne()'>Add PacMan</button>
-    <button onclick='update()'>Start Game</button>
-  </div>
-
-  <script>
-    const pacArray = [
-      ['./PacMan1.png', './PacMan2.png'],
-      ['./PacMan3.png', './PacMan4.png'],
-    ];
-    const pacMen = [];
-
-    function setToRandom(scale) {
-      return {
-        x: Math.random() * scale,
-        y: Math.random() * scale,
-      };
-    }
-
-    function makePac() {
-      let velocity = setToRandom(10);
-      let position = setToRandom(100);
-
-      let game = document.getElementById('game');
-      let newimg = document.createElement('img');
-      newimg.style.position = 'absolute';
-      newimg.src = './PacMan1.png';
-      newimg.width = 50;
-      newimg.style.left = position.x + 'vw';
-      newimg.style.top = position.y + 'vh';
-      game.appendChild(newimg);
-
-      return {
-        position,
-        velocity,
-        newimg,
-      };
-    }
-
-    function update() {
-      pacMen.forEach((item) => {
-        checkCollisions(item);
-        item.position.x += item.velocity.x;
-        item.position.y += item.velocity.y;
-        item.newimg.style.left = item.position.x + 'vw';
-        item.newimg.style.top = item.position.y + 'vh';
-      });
-      requestAnimationFrame(update);
-    }
-
-    function checkCollisions(item) {
-      if (item.position.x + item.velocity.x + item.newimg.width > 100 || item.position.x + item.velocity.x < 0) item.velocity.x = -item.velocity.x;
-      if (item.position.y + item.velocity.y + item.newimg.height > 100 || item.position.y + item.velocity.y < 0) item.velocity.y = -item.velocity.y;
-    }
-
-    function makeOne() {
-      pacMen.push(makePac());
-    }
-  </script>
-</body>
-</html>
 
 
-<!-- <html>
+<html>
 <style>
   button {
       margin: 10px;
@@ -188,7 +93,7 @@ module.exports = { checkCollisions, update, pacMen };
 </body>
 
 </html>
- -->
+
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
