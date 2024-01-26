@@ -2,7 +2,7 @@
 # Factory for making pacmen
 This program serves as a PacMen factory, allowing you to populate the screen with as many PacMen as you desire. Once the program is initiated, the PacMen will move at random speeds, creating a dynamic and entertaining display. You have the flexibility to add more PacMen while the program is running.
 
-<img src="PacMan1">
+<img src="images/PacMan1">
 
 # Instructions to run the program
 1. Navigate to [Pacmen Factory - Ava Tunti](https://ava-tunti.github.io/pacmen/starter.html)
