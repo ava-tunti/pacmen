@@ -5,7 +5,7 @@ This program serves as a PacMen factory, allowing you to populate the screen wit
 <img src="images/PacMan1">
 
 # Instructions to run the program
-1. Navigate to [Pacmen Factory - Ava Tunti](https://ava-tunti.github.io/pacmen/starter.html)
+1. Navigate to [Pacmen Factory - Ava Tunti](https://ava-tunti.github.io/pacmen/Index.html)
 2. Click the "Add Pacmen" button to add the desired number of Pacmen to the screen.
 3. Start the game by clicking the "Start Game" button to observe the PacMen's lively movements.
 
