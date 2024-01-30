@@ -10,6 +10,10 @@ This program serves as a PacMen factory, allowing you to populate the screen wit
 3. Start the game by clicking the "Start Game" button to observe the PacMen's lively movements.
 
 Feel free to experiment with different quantities of PacMen and enjoy the dynamic display!
+
+# Future Improvements
+Possible future improvements could include adding animation to the pacmen, or adding a clearly defined border for the pacmen to bounce around.
+
 #
 **MIT License**
 
